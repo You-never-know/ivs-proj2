@@ -153,5 +153,5 @@ class test_operations(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    suite = unittest.TestLoader().loadTestsFromTestCase(test_operacie)
+    suite = unittest.TestLoader().loadTestsFromTestCase(test_operations)
     unittest.TextTestRunner(verbosity=2).run(suite)
