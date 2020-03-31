@@ -1,24 +1,26 @@
 
-def sucet(x1, x2):
+def addition(x1, x2):
 	return x1 + x2
 
-def rozdiel(x1,x2):
+def substraction(x1,x2):
 	return x1 - x2
 
-def nasobenie(x1,x2):
+def multiplication(x1,x2):
 	return x1 * x2
 
-def delenie(x1, x2):
+def division(x1, x2):
+    if x2==0:
+        return None
+    else:
+        return x1/x2
 
+def factorial(x):
 	return 0
 
-def faktorial(x):
+def exponencial(x, exponent):
 	return 0
 
-def prir_mocnina(x, exponent):
-	return 0
-
-def odmocnina(x, zaklad):
+def root(x, base):
 	return 0
 
 def modulo(x1, x2):
