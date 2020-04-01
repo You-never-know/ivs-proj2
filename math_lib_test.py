@@ -206,6 +206,50 @@ class test_operations(unittest.TestCase):
         self.assertAlmostEqual(m.exponencial(-8.1236,5), -35378.7638681105623096)
         self.assertAlmostEqual(m.exponencial(1.57896325,60), 798585317979.60359157739249626795)
 
+
+    ## Test for root 1
+    # @test root with incorrect options (positive root of negative number, 0 root of number, negative root of 0)
+    # @param self creates a method
+    def test_root_incorect(self):
+        self.assertEqual(m.root(-5, 2), None, "Expected solution: None -> Can't do even root of a negative number" )
+        self.assertEqual(m.root(17, 0), None, "Expected solution: None -> Can't do zero root of a number" )
+        self.assertEqual(m.root(0, -8), None, "Expected solution: None -> Can't do root of a zero" )
+        self.assertEqual(m.root(-53, -8), None, "Expected solution: None -> Can't do even negative root of a negative number" )
+        self.assertEqual(m.root(-127, 5.52), None, "Expected solution: None -> Can't do decimal even root of a negative number" )
+
+    ## Test for root 2
+    # @test root with positive whole numbers
+    # @param self creates a method
+    def test_root_correct_positive_whole(self):
+        self.assertEqual(m.root(601692057,5), 57, "Expected solution: 57")
+        self.assertEqual(m.root(16777216,8), 8, "Expected solution: 8")
+        self.assertEqual(m.root(2090278243656, 3), 12786, "Expected solution: 102 786")
+
+    ## Test for root 3
+    # @test root with with negative whole numbers
+    # @param self creates a method
+    def test_root_correct_negative_whole(self):
+        self.assertEqual(m.root(-10460353203,7), -27, "Expected solution: -27")
+        self.assertEqual(m.root(-46411484401953,9), -33, "Expected solution: -33")
+        self.assertEqual(m.root(-94143178827 ,23), -3, "Expected solution: -3")
+
+    ## Test for root 4
+    # @test root with positive decimal numbers
+    # @param self creates a method
+    def test_root_correct_positive_decimal(self):
+        self.assertAlmostEqual(m.root(2,2), 1.41421356237309504880168872420 )
+        self.assertAlmostEqual(m.root(428.56489,12), 1,657046576)
+        self.assertAlmostEqual(m.root(2090278243656, 5.58564), 160.5803766)
+
+    ## Test for root 5
+    # @test root with negative decimal numbers
+    # @param self creates a method
+    def test_root_correct_negative_decimal(self):
+        self.assertAlmostEqual(m.root(-22,-5), -0.5389090339 )
+        self.assertAlmostEqual(m.root(428.56489,-12), 0.6034833386)
+        self.assertAlmostEqual(m.root(-2090278243656.45878, 5.51), 172.17564)
+
+
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(test_operations)
     unittest.TextTestRunner(verbosity=2).run(suite)
