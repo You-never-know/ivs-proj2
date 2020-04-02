@@ -9,9 +9,9 @@
 import math_lib as m
 import unittest
 
-## @class Math library testing
+## @class Math library testing / basic operations
 # @param unittest.TestCase makes individual unit for testing
-class test_operations(unittest.TestCase):
+class test_basic_operations(unittest.TestCase):
     
     ## Test for addition 1
     # @test addition with positive whole numbers
@@ -148,6 +148,12 @@ class test_operations(unittest.TestCase):
         self.assertAlmostEqual(m.division(-22329857.546546,-284639.65213),78.449567301844355300013)
         self.assertAlmostEqual(m.division(41.54584512318978795,-5.5648956321),-7.465700683322935297354)
 
+
+
+## @class Math library testing - advanced operations
+# @param unittest.TestCase makes individual unit for testing
+class test_advanced_operations(unittest.TestCase):
+
     ## Test for factorial 1
     # @test factorial with correct numbers
     # @param self creates a method
@@ -249,7 +255,25 @@ class test_operations(unittest.TestCase):
         self.assertAlmostEqual(m.root(428.56489,-12), 0.6034833386)
         self.assertAlmostEqual(m.root(-2090278243656.45878, 5.51), 172.17564)
 
+    ## Test for modulo 1
+    # @test modulo with positive numbers
+    # @param self creates a method
+    def test_modulo_positive(self):
+        self.assertEqual(m.modulo(128,79),49, "Expected solution: 49")
+        self.assertEqual(m.modulo(54615628,78989),34229, "Expected solution: 34 229")
+        self.assertEqual(m.modulo(879754665432184789,545645132),350789181, "Expected solution: 350 789 181")
+
+    ## Test for modulo 2
+    # @test modulo with negative numbers
+    # @param self creates a method
+    def test_modulo_negative(self):
+        self.assertEqual(m.modulo(-259,-28),-7, "Expected solution: -7")
+        self.assertEqual(m.modulo(-54615628,78989),-34229, "Expected solution: -34 229")
+        self.assertEqual(m.modulo(45623125432184789,-4541221132),1637930181 ,"Expected solution: 1 637 930 181‬")
 
 if __name__ == '__main__':
-    suite = unittest.TestLoader().loadTestsFromTestCase(test_operations)
+    suite = unittest.TestLoader().loadTestsFromTestCase(test_basic_operations)
     unittest.TextTestRunner(verbosity=2).run(suite)
+
+    suite2 = unittest.TestLoader().loadTestsFromTestCase(test_advanced_operations)
+    unittest.TextTestRunner(verbosity=2).run(suite2)
