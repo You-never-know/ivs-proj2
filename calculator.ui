@@ -14,7 +14,7 @@
    <string>Calculator</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton_17">
+   <widget class="QPushButton" name="pushButton_factorial">
     <property name="enabled">
      <bool>true</bool>
     </property>
@@ -45,7 +45,7 @@ QPushButton:pressed {
      <string>x!</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_21">
+   <widget class="QPushButton" name="pushButton_not">
     <property name="enabled">
      <bool>true</bool>
     </property>
@@ -76,7 +76,7 @@ QPushButton:pressed {
      <string>+/-</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_10">
+   <widget class="QPushButton" name="pushButton_5">
     <property name="enabled">
      <bool>true</bool>
     </property>
@@ -107,7 +107,7 @@ QPushButton:pressed {
      <string>5</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="result">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -135,10 +135,10 @@ QPushButton:pressed {
      <string>0</string>
     </property>
     <property name="buddy">
-     <cstring>label</cstring>
+     <cstring>result</cstring>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_9">
+   <widget class="QPushButton" name="pushButton_4">
     <property name="enabled">
      <bool>true</bool>
     </property>
@@ -169,7 +169,7 @@ QPushButton:pressed {
      <string>4</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_14">
+   <widget class="QPushButton" name="pushButton_8">
     <property name="enabled">
      <bool>true</bool>
     </property>
@@ -200,7 +200,7 @@ QPushButton:pressed {
      <string>8</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_5">
+   <widget class="QPushButton" name="pushButton_1">
     <property name="enabled">
      <bool>true</bool>
     </property>
@@ -231,7 +231,7 @@ QPushButton:pressed {
      <string>1</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_7">
+   <widget class="QPushButton" name="pushButton_3">
     <property name="enabled">
      <bool>true</bool>
     </property>
@@ -262,7 +262,7 @@ QPushButton:pressed {
      <string>3</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_16">
+   <widget class="QPushButton" name="pushButton_divide">
     <property name="enabled">
      <bool>true</bool>
     </property>
@@ -293,7 +293,7 @@ QPushButton:pressed {
      <string>÷</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_18">
+   <widget class="QPushButton" name="pushButton_power">
     <property name="enabled">
      <bool>true</bool>
     </property>
@@ -324,7 +324,7 @@ QPushButton:pressed {
      <string>xⁿ</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_12">
+   <widget class="QPushButton" name="pushButton_mul">
     <property name="enabled">
      <bool>true</bool>
     </property>
@@ -355,7 +355,7 @@ QPushButton:pressed {
      <string>*</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="pushButton_0">
     <property name="enabled">
      <bool>true</bool>
     </property>
@@ -386,7 +386,7 @@ QPushButton:pressed {
      <string>0</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_19">
+   <widget class="QPushButton" name="pushButton_root">
     <property name="enabled">
      <bool>true</bool>
     </property>
@@ -417,7 +417,7 @@ QPushButton:pressed {
      <string>ⁿ√x</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_23">
+   <widget class="QPushButton" name="pushButton_del">
     <property name="enabled">
      <bool>true</bool>
     </property>
@@ -448,7 +448,7 @@ QPushButton:pressed {
      <string>del</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="pushButton_dot">
     <property name="enabled">
      <bool>true</bool>
     </property>
@@ -479,7 +479,7 @@ QPushButton:pressed {
      <string>.</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_6">
+   <widget class="QPushButton" name="pushButton_2">
     <property name="enabled">
      <bool>true</bool>
     </property>
@@ -510,7 +510,7 @@ QPushButton:pressed {
      <string>2</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_8">
+   <widget class="QPushButton" name="pushButton_sub">
     <property name="enabled">
      <bool>true</bool>
     </property>
@@ -541,7 +541,7 @@ QPushButton:pressed {
      <string>-</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_22">
+   <widget class="QPushButton" name="pushButton_inv">
     <property name="enabled">
      <bool>true</bool>
     </property>
@@ -572,7 +572,7 @@ QPushButton:pressed {
      <string>1/x</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_13">
+   <widget class="QPushButton" name="pushButton_7">
     <property name="enabled">
      <bool>true</bool>
     </property>
@@ -603,7 +603,7 @@ QPushButton:pressed {
      <string>7</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_15">
+   <widget class="QPushButton" name="pushButton_9">
     <property name="enabled">
      <bool>true</bool>
     </property>
@@ -634,7 +634,7 @@ QPushButton:pressed {
      <string>9</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_20">
+   <widget class="QPushButton" name="pushButton_mod">
     <property name="enabled">
      <bool>true</bool>
     </property>
@@ -665,7 +665,7 @@ QPushButton:pressed {
      <string>%</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="pushButton_eq">
     <property name="enabled">
      <bool>true</bool>
     </property>
@@ -696,7 +696,7 @@ QPushButton:pressed {
      <string>=</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_11">
+   <widget class="QPushButton" name="pushButton_6">
     <property name="enabled">
      <bool>true</bool>
     </property>
@@ -727,7 +727,7 @@ QPushButton:pressed {
      <string>6</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_4">
+   <widget class="QPushButton" name="pushButton_add">
     <property name="enabled">
      <bool>true</bool>
     </property>
@@ -758,7 +758,7 @@ QPushButton:pressed {
      <string>+</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_24">
+   <widget class="QPushButton" name="pushButton_c">
     <property name="enabled">
      <bool>true</bool>
     </property>
