@@ -30,5 +30,5 @@ def modulo(x1, x2):
 def neg(x):
     return -x
 
-def 1/x(x):
+def inverse(x):
     return 0
