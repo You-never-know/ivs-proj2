@@ -9,7 +9,7 @@
 import math_lib as m
 import unittest
 
-## @class Math library testing / basic operations
+## @class Math library testing - basic operations
 # @param unittest.TestCase makes individual unit for testing
 class test_basic_operations(unittest.TestCase):
     
@@ -270,6 +270,27 @@ class test_advanced_operations(unittest.TestCase):
         self.assertEqual(m.modulo(-259,-28),-7, "Expected solution: -7")
         self.assertEqual(m.modulo(-54615628,78989),-34229, "Expected solution: -34 229")
         self.assertEqual(m.modulo(45623125432184789,-4541221132),1637930181 ,"Expected solution: 1 637 930 181‬")
+
+    ## Test for neg 
+    # @test neg with multiple different numbers
+    # @param self creates a method
+    def test_neg(self):
+        self.assertEqual(m.neg(-2590), 2590, "Expected solution: 2590")
+        self.assertEqual(m.neg(698798.987564), -698798.987564, "Expected solution: 698 798,987564")
+        self.assertEqual(m.neg(0), 0, "Expected solution: 2590")
+
+    ## Test for inverse 
+    # @test inverse with multiple different numbers
+    # @param self creates a method
+    def test_inverse(self):
+        self.assertEqual(m.inverse(0), None, "Expected solution: None -> Can't divide with 0" )
+        self.assertEqual(m.inverse(1), 1, "Expected solution: 1" )
+        self.assertAlmostEqual(m.inverse(-269), -0.00371747211895910780669)
+        self.assertAlmostEqual(m.inverse(0.4564548987), 2.190796950252995499290059)
+        self.assertAlmostEqual(m.inverse(-98.546454213), -0.0101474985374773892068944)
+
+
+
 
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(test_basic_operations)

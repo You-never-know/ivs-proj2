@@ -26,3 +26,9 @@ def root(x, base):
 def modulo(x1, x2):
 
 	return 0
+
+def neg(x):
+    return -x
+
+def inverse(x):
+    return 0
