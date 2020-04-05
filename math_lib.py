@@ -88,8 +88,6 @@ def root(x, base):
     return (base)**(1/x)
 
 ## The modulo function finds the remainder after division of a number by another number.
-# If x1 is negative number modulo works with absolute value of x1
-# If x2 is negative the result is negative value of modulo with positive x2
 # @note \f$ x1\%x2 \f$
 # @param x1 Divident
 # @param x2 Divisor
@@ -99,8 +97,9 @@ def modulo(x1, x2):
         return None
     if ((x1) < 0 ):
         x1=abs(x1)
-    if ( (x2) < 0):
         return -( (x1) % (abs(x2)) )
+    if ( (x2) < 0):
+        return ( (x1) % (abs(x2)) )
     return (x1)%(x2)
 
 ## The negation changes the value of negative number to positive and the other way around
@@ -108,7 +107,10 @@ def modulo(x1, x2):
 # @param x Number that will be negated
 # @return Negated value
 def neg(x):
-    return -x
+    if (x == 0):
+        return x
+    else:
+        return -x
 
 ## The multiplicative inverse of a fraction (a/b is b/a).
 # @note \f$ x^-1 \f$
