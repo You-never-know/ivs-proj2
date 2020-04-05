@@ -1,0 +1,41 @@
+IVS - 2. projekt 
+Názov týmu: Ideme na obed ? 
+
+########################################################################################
+
+Èlenovia:
+	Daniel Marek - xmarek72 
+	Barbora Lukáèová - xlukac15
+	Kateøina Neprašová - xnepra01
+
+Stanovené termíny:
+	Zaèiatok práce: 16.03.2020
+	Rozvrhnutie projektu: ~ 16.03.2020 - 23.03.2020
+	Implementácia: ~ 24.03.2020 - 13.04.2020
+	Testovanie, tvorba dokumentácie: ~ 14.04.2020 - 17.04.2020
+	Posledné úpravy: ~ 18.04.2020 - 22.04.2020
+
+Rozdelenie úloh:
+	Testy: Daniel Marek (xmarek72)
+	Matematická knižnica: Barbora Lukáèová (xlukac15)
+	GUI: Kateøina Neprašová (xnepra01)
+	Inštalátor: Daniel Marek (xmarek72)
+	Profiling: Daniel Marek (xmarek72), Barbora Lukáèová (xlukac15)
+	Dokumentácia: Kateøina Neprašová (xnepra01)
+
+Komunikaèné kanály:
+	Facebook - skupinový chat
+
+Pravidlá komunikácie:
+	- pravidelná kontrola nových správ
+	- aktivne zapájanie sa do konverzácie
+	- riešenie 1 konkrétneho problému 
+	- pravidelné hlásenie o stave práce
+
+Systém pre správu verzií:
+	- git 
+	- zdie¾aný repozitár: GitHub
+	- nazov repozitára: kate-nepra/ivs-proj2
+	- pridelený prístup pre ivskontrola
+	 
+
