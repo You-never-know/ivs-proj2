@@ -51,7 +51,7 @@ class SetupWindow(QtWidgets.QMainWindow, Ui_Calculator):
             self.result.setText(result_label)
 
     def factorial_pressed(self):
-        if '.' in self.result.text():
+        if '.' in self.result.text() or '-' in self.result.text():
             self.result.setText("Undefined")
         else:
             result_label = format(m.factorial(int(self.result.text())), '.15g')
