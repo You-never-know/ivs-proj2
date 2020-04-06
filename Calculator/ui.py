@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'calculator.ui'
 #
-# Created by: PyQt5 UI code generator 5.13.0
+# Created by: PyQt5 UI code generator 5.13.2
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -20,8 +20,10 @@ class Ui_Calculator(object):
         self.pushButton_factorial.setEnabled(True)
         self.pushButton_factorial.setGeometry(QtCore.QRect(0, 120, 60, 60))
         font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(11)
+        font.setFamily("Calibri")
+        font.setPointSize(13)
+        font.setBold(False)
+        font.setWeight(50)
         self.pushButton_factorial.setFont(font)
         self.pushButton_factorial.setStyleSheet("QPushButton {\n"
 "   border: 1px solid  rgb(242, 242, 242);\n"
@@ -35,8 +37,10 @@ class Ui_Calculator(object):
         self.pushButton_not.setEnabled(True)
         self.pushButton_not.setGeometry(QtCore.QRect(60, 60, 60, 60))
         font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(11)
+        font.setFamily("Calibri")
+        font.setPointSize(13)
+        font.setBold(False)
+        font.setWeight(50)
         self.pushButton_not.setFont(font)
         self.pushButton_not.setStyleSheet("QPushButton {\n"
 "   border: 1px solid  rgb(242, 242, 242);\n"
@@ -50,8 +54,10 @@ class Ui_Calculator(object):
         self.pushButton_5.setEnabled(True)
         self.pushButton_5.setGeometry(QtCore.QRect(60, 240, 60, 60))
         font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(11)
+        font.setFamily("Calibri")
+        font.setPointSize(13)
+        font.setBold(False)
+        font.setWeight(50)
         self.pushButton_5.setFont(font)
         self.pushButton_5.setStyleSheet("QPushButton {\n"
 "   border: 1px solid  rgb(245, 245, 245);\n"
@@ -64,8 +70,10 @@ class Ui_Calculator(object):
         self.result = QtWidgets.QLabel(self.centralwidget)
         self.result.setGeometry(QtCore.QRect(0, 0, 240, 60))
         font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(11)
+        font.setFamily("Calibri")
+        font.setPointSize(13)
+        font.setBold(False)
+        font.setWeight(50)
         self.result.setFont(font)
         self.result.setStyleSheet("QLabel {\n"
 "  qproperty-alignment: \'AlignVCenter | AlignRight\';\n"
@@ -79,8 +87,10 @@ class Ui_Calculator(object):
         self.pushButton_4.setEnabled(True)
         self.pushButton_4.setGeometry(QtCore.QRect(0, 240, 60, 60))
         font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(11)
+        font.setFamily("Calibri")
+        font.setPointSize(13)
+        font.setBold(False)
+        font.setWeight(50)
         self.pushButton_4.setFont(font)
         self.pushButton_4.setStyleSheet("QPushButton {\n"
 "   border: 1px solid  rgb(245, 245, 245);\n"
@@ -94,8 +104,10 @@ class Ui_Calculator(object):
         self.pushButton_8.setEnabled(True)
         self.pushButton_8.setGeometry(QtCore.QRect(60, 180, 60, 60))
         font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(11)
+        font.setFamily("Calibri")
+        font.setPointSize(13)
+        font.setBold(False)
+        font.setWeight(50)
         self.pushButton_8.setFont(font)
         self.pushButton_8.setStyleSheet("QPushButton {\n"
 "   border: 1px solid  rgb(245, 245, 245);\n"
@@ -109,8 +121,10 @@ class Ui_Calculator(object):
         self.pushButton_1.setEnabled(True)
         self.pushButton_1.setGeometry(QtCore.QRect(0, 300, 60, 60))
         font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(11)
+        font.setFamily("Calibri")
+        font.setPointSize(13)
+        font.setBold(False)
+        font.setWeight(50)
         self.pushButton_1.setFont(font)
         self.pushButton_1.setStyleSheet("QPushButton {\n"
 "   border: 1px solid  rgb(245, 245, 245);\n"
@@ -124,8 +138,10 @@ class Ui_Calculator(object):
         self.pushButton_3.setEnabled(True)
         self.pushButton_3.setGeometry(QtCore.QRect(120, 300, 60, 60))
         font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(11)
+        font.setFamily("Calibri")
+        font.setPointSize(13)
+        font.setBold(False)
+        font.setWeight(50)
         self.pushButton_3.setFont(font)
         self.pushButton_3.setStyleSheet("QPushButton {\n"
 "   border: 1px solid  rgb(245, 245, 245);\n"
@@ -135,27 +151,31 @@ class Ui_Calculator(object):
 "    background-color:   rgb(245, 245, 245);\n"
 "}")
         self.pushButton_3.setObjectName("pushButton_3")
-        self.pushButton_divide = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_divide.setEnabled(True)
-        self.pushButton_divide.setGeometry(QtCore.QRect(180, 180, 60, 60))
+        self.pushButton_div = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_div.setEnabled(True)
+        self.pushButton_div.setGeometry(QtCore.QRect(180, 180, 60, 60))
         font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(11)
-        self.pushButton_divide.setFont(font)
-        self.pushButton_divide.setStyleSheet("QPushButton {\n"
+        font.setFamily("Calibri")
+        font.setPointSize(13)
+        font.setBold(False)
+        font.setWeight(50)
+        self.pushButton_div.setFont(font)
+        self.pushButton_div.setStyleSheet("QPushButton {\n"
 "   border: 1px solid  rgb(245, 245, 245);\n"
 "   background-color: rgb(245, 252, 255);\n"
 "}\n"
 "QPushButton:pressed {\n"
 "    background-color:   rgb(245, 245, 245);\n"
 "}")
-        self.pushButton_divide.setObjectName("pushButton_divide")
+        self.pushButton_div.setObjectName("pushButton_div")
         self.pushButton_power = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_power.setEnabled(True)
         self.pushButton_power.setGeometry(QtCore.QRect(60, 120, 60, 60))
         font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(11)
+        font.setFamily("Calibri")
+        font.setPointSize(13)
+        font.setBold(False)
+        font.setWeight(50)
         self.pushButton_power.setFont(font)
         self.pushButton_power.setStyleSheet("QPushButton {\n"
 "   border: 1px solid  rgb(242, 242, 242);\n"
@@ -169,8 +189,10 @@ class Ui_Calculator(object):
         self.pushButton_mul.setEnabled(True)
         self.pushButton_mul.setGeometry(QtCore.QRect(180, 240, 60, 60))
         font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(11)
+        font.setFamily("Calibri")
+        font.setPointSize(13)
+        font.setBold(False)
+        font.setWeight(50)
         self.pushButton_mul.setFont(font)
         self.pushButton_mul.setStyleSheet("QPushButton {\n"
 "   border: 1px solid  rgb(245, 245, 245);\n"
@@ -184,8 +206,10 @@ class Ui_Calculator(object):
         self.pushButton_0.setEnabled(True)
         self.pushButton_0.setGeometry(QtCore.QRect(60, 360, 60, 60))
         font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(11)
+        font.setFamily("Calibri")
+        font.setPointSize(13)
+        font.setBold(False)
+        font.setWeight(50)
         self.pushButton_0.setFont(font)
         self.pushButton_0.setStyleSheet("QPushButton {\n"
 "   border: 1px solid  rgb(245, 245, 245);\n"
@@ -199,8 +223,10 @@ class Ui_Calculator(object):
         self.pushButton_root.setEnabled(True)
         self.pushButton_root.setGeometry(QtCore.QRect(120, 120, 60, 60))
         font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(11)
+        font.setFamily("Calibri")
+        font.setPointSize(13)
+        font.setBold(False)
+        font.setWeight(50)
         self.pushButton_root.setFont(font)
         self.pushButton_root.setStyleSheet("QPushButton {\n"
 "   border: 1px solid  rgb(242, 242, 242);\n"
@@ -214,8 +240,10 @@ class Ui_Calculator(object):
         self.pushButton_del.setEnabled(True)
         self.pushButton_del.setGeometry(QtCore.QRect(180, 60, 60, 60))
         font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(11)
+        font.setFamily("Calibri")
+        font.setPointSize(13)
+        font.setBold(False)
+        font.setWeight(50)
         self.pushButton_del.setFont(font)
         self.pushButton_del.setStyleSheet("QPushButton {\n"
 "   border: 1px solid  rgb(242, 242, 242);\n"
@@ -229,8 +257,10 @@ class Ui_Calculator(object):
         self.pushButton_dot.setEnabled(True)
         self.pushButton_dot.setGeometry(QtCore.QRect(0, 360, 60, 60))
         font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(11)
+        font.setFamily("Calibri")
+        font.setPointSize(13)
+        font.setBold(False)
+        font.setWeight(50)
         self.pushButton_dot.setFont(font)
         self.pushButton_dot.setStyleSheet("QPushButton {\n"
 "   border: 1px solid  rgb(242, 242, 242);\n"
@@ -244,8 +274,10 @@ class Ui_Calculator(object):
         self.pushButton_2.setEnabled(True)
         self.pushButton_2.setGeometry(QtCore.QRect(60, 300, 60, 60))
         font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(11)
+        font.setFamily("Calibri")
+        font.setPointSize(13)
+        font.setBold(False)
+        font.setWeight(50)
         self.pushButton_2.setFont(font)
         self.pushButton_2.setStyleSheet("QPushButton {\n"
 "   border: 1px solid  rgb(245, 245, 245);\n"
@@ -259,8 +291,10 @@ class Ui_Calculator(object):
         self.pushButton_sub.setEnabled(True)
         self.pushButton_sub.setGeometry(QtCore.QRect(180, 300, 60, 60))
         font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(11)
+        font.setFamily("Calibri")
+        font.setPointSize(13)
+        font.setBold(False)
+        font.setWeight(50)
         self.pushButton_sub.setFont(font)
         self.pushButton_sub.setStyleSheet("QPushButton {\n"
 "   border: 1px solid  rgb(245, 245, 245);\n"
@@ -274,8 +308,10 @@ class Ui_Calculator(object):
         self.pushButton_inv.setEnabled(True)
         self.pushButton_inv.setGeometry(QtCore.QRect(0, 60, 60, 60))
         font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(11)
+        font.setFamily("Calibri")
+        font.setPointSize(13)
+        font.setBold(False)
+        font.setWeight(50)
         self.pushButton_inv.setFont(font)
         self.pushButton_inv.setStyleSheet("QPushButton {\n"
 "   border: 1px solid  rgb(242, 242, 242);\n"
@@ -289,8 +325,10 @@ class Ui_Calculator(object):
         self.pushButton_7.setEnabled(True)
         self.pushButton_7.setGeometry(QtCore.QRect(0, 180, 60, 60))
         font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(11)
+        font.setFamily("Calibri")
+        font.setPointSize(13)
+        font.setBold(False)
+        font.setWeight(50)
         self.pushButton_7.setFont(font)
         self.pushButton_7.setStyleSheet("QPushButton {\n"
 "   border: 1px solid  rgb(245, 245, 245);\n"
@@ -304,8 +342,10 @@ class Ui_Calculator(object):
         self.pushButton_9.setEnabled(True)
         self.pushButton_9.setGeometry(QtCore.QRect(120, 180, 60, 60))
         font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(11)
+        font.setFamily("Calibri")
+        font.setPointSize(13)
+        font.setBold(False)
+        font.setWeight(50)
         self.pushButton_9.setFont(font)
         self.pushButton_9.setStyleSheet("QPushButton {\n"
 "   border: 1px solid  rgb(245, 245, 245);\n"
@@ -319,8 +359,10 @@ class Ui_Calculator(object):
         self.pushButton_mod.setEnabled(True)
         self.pushButton_mod.setGeometry(QtCore.QRect(180, 120, 60, 60))
         font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(11)
+        font.setFamily("Calibri")
+        font.setPointSize(13)
+        font.setBold(False)
+        font.setWeight(50)
         self.pushButton_mod.setFont(font)
         self.pushButton_mod.setStyleSheet("QPushButton {\n"
 "   border: 1px solid  rgb(242, 242, 242);\n"
@@ -334,8 +376,10 @@ class Ui_Calculator(object):
         self.pushButton_eq.setEnabled(True)
         self.pushButton_eq.setGeometry(QtCore.QRect(120, 360, 60, 60))
         font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(11)
+        font.setFamily("Calibri")
+        font.setPointSize(13)
+        font.setBold(False)
+        font.setWeight(50)
         self.pushButton_eq.setFont(font)
         self.pushButton_eq.setStyleSheet("QPushButton {\n"
 "   border: 1px solid  rgb(242, 242, 242);\n"
@@ -349,8 +393,10 @@ class Ui_Calculator(object):
         self.pushButton_6.setEnabled(True)
         self.pushButton_6.setGeometry(QtCore.QRect(120, 240, 60, 60))
         font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(11)
+        font.setFamily("Calibri")
+        font.setPointSize(13)
+        font.setBold(False)
+        font.setWeight(50)
         self.pushButton_6.setFont(font)
         self.pushButton_6.setStyleSheet("QPushButton {\n"
 "   border: 1px solid  rgb(245, 245, 245);\n"
@@ -364,8 +410,10 @@ class Ui_Calculator(object):
         self.pushButton_add.setEnabled(True)
         self.pushButton_add.setGeometry(QtCore.QRect(180, 360, 60, 60))
         font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(11)
+        font.setFamily("Calibri")
+        font.setPointSize(13)
+        font.setBold(False)
+        font.setWeight(50)
         self.pushButton_add.setFont(font)
         self.pushButton_add.setStyleSheet("QPushButton {\n"
 "   border: 1px solid  rgb(245, 245, 245);\n"
@@ -379,8 +427,10 @@ class Ui_Calculator(object):
         self.pushButton_c.setEnabled(True)
         self.pushButton_c.setGeometry(QtCore.QRect(120, 60, 60, 60))
         font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(11)
+        font.setFamily("Calibri")
+        font.setPointSize(13)
+        font.setBold(False)
+        font.setWeight(50)
         self.pushButton_c.setFont(font)
         self.pushButton_c.setStyleSheet("QPushButton {\n"
 "   border: 1px solid  rgb(242, 242, 242);\n"
@@ -407,9 +457,9 @@ class Ui_Calculator(object):
         self.pushButton_8.setText(_translate("Calculator", "8"))
         self.pushButton_1.setText(_translate("Calculator", "1"))
         self.pushButton_3.setText(_translate("Calculator", "3"))
-        self.pushButton_divide.setText(_translate("Calculator", "÷"))
+        self.pushButton_div.setText(_translate("Calculator", "÷"))
         self.pushButton_power.setText(_translate("Calculator", "xⁿ"))
-        self.pushButton_mul.setText(_translate("Calculator", "*"))
+        self.pushButton_mul.setText(_translate("Calculator", "×"))
         self.pushButton_0.setText(_translate("Calculator", "0"))
         self.pushButton_root.setText(_translate("Calculator", "ⁿ√x"))
         self.pushButton_del.setText(_translate("Calculator", "del"))

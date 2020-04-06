@@ -4,10 +4,13 @@ import math_lib as m
 
 
 class SetupWindow(QtWidgets.QMainWindow, Ui_Calculator):
+    x1 = None
+    x2 = None
+
     def __init__(self):
         super().__init__()  # calling the init methods of the base classes QMainWindow and Ui_Calculator
         self.setupUi(self)  # creates the designed UI
-        self.show()         # shows the UI
+        self.show()  # shows the UI
 
         # btns
         self.pushButton_0.clicked.connect(self.number_btn_pressed)
@@ -23,14 +26,43 @@ class SetupWindow(QtWidgets.QMainWindow, Ui_Calculator):
 
         self.pushButton_dot.clicked.connect(self.dot_pressed)
 
+        self.pushButton_c.clicked.connect(self.c_pressed)
         self.pushButton_not.clicked.connect(self.not_pressed)
         self.pushButton_inv.clicked.connect(self.inv_pressed)
         self.pushButton_factorial.clicked.connect(self.factorial_pressed)
 
+        self.pushButton_add.clicked.connect(self.operation_bin_pressed)
+        self.pushButton_sub.clicked.connect(self.operation_bin_pressed)
+        self.pushButton_mul.clicked.connect(self.operation_bin_pressed)
+        self.pushButton_div.clicked.connect(self.operation_bin_pressed)
+        self.pushButton_mod.clicked.connect(self.operation_bin_pressed)
+        self.pushButton_root.clicked.connect(self.operation_bin_pressed)
+        self.pushButton_power.clicked.connect(self.operation_bin_pressed)
+
+        self.pushButton_add.setCheckable(True)
+        self.pushButton_sub.setCheckable(True)
+        self.pushButton_mul.setCheckable(True)
+        self.pushButton_div.setCheckable(True)
+        self.pushButton_mod.setCheckable(True)
+        self.pushButton_root.setCheckable(True)
+        self.pushButton_power.setCheckable(True)
+
+        self.pushButton_eq.clicked.connect(self.eq_pressed)
+
     def number_btn_pressed(self):
         btn = self.sender()
 
-        result_label = format(float(self.result.text() + btn.text()), '.15g')  # float solves starting 0, format solves formatting and string displaying
+        if (self.pushButton_add.isChecked() or
+                self.pushButton_sub.isChecked() or
+                self.pushButton_mul.isChecked() or
+                self.pushButton_div.isChecked() or
+                self.pushButton_mod.isChecked() or
+                self.pushButton_root.isChecked() or
+                self.pushButton_power.isChecked()):
+            result_label = format(float(btn.text()), '.15g')
+        else:
+            result_label = format(float(self.result.text() + btn.text()), '.15g')
+            # float solves starting 0, format solves formatting and string displaying
         self.result.setText(result_label)
 
     def dot_pressed(self):
@@ -39,20 +71,82 @@ class SetupWindow(QtWidgets.QMainWindow, Ui_Calculator):
         else:
             self.result.setText(self.result.text() + '.')
 
+    def c_pressed(self):
+        self.result.setText("")
+
     def not_pressed(self):
         result_label = format(m.neg(float(self.result.text())), '.15g')
         self.result.setText(result_label)
 
     def inv_pressed(self):
-        if self.result.text() == "0":
+        if m.inverse(float(self.result.text())) is None:
             self.result.setText("Undefined")
         else:
             result_label = format(m.inverse(float(self.result.text())), '.15g')
             self.result.setText(result_label)
 
     def factorial_pressed(self):
-        if '.' in self.result.text() or '-' in self.result.text():
+        if '.' in self.result.text() or m.factorial(int(self.result.text())) is None:
             self.result.setText("Undefined")
         else:
             result_label = format(m.factorial(int(self.result.text())), '.15g')
             self.result.setText(result_label)
+
+    def operation_bin_pressed(self):
+        btn = self.sender()
+        self.x1 = float(self.result.text())
+
+        btn.setChecked(True)
+
+    def eq_pressed(self):
+        x2 = float(self.result.text())
+        # print("x1:", self.x1)
+        # print("x2:", x2)
+
+        if self.pushButton_add.isChecked():
+            result_label = format(m.addition(self.x1, x2), '.15g')
+            print(result_label)
+            self.pushButton_add.setChecked(False)
+            self.result.setText(result_label)
+
+        elif self.pushButton_sub.isChecked():
+            result_label = format(m.substraction(self.x1, x2), '.15g')
+            self.pushButton_sub.setChecked(False)
+            self.result.setText(result_label)
+
+        elif self.pushButton_mul.isChecked():
+            result_label = format(m.multiplication(self.x1, x2), '.15g')
+            self.pushButton_mul.setChecked(False)
+            self.result.setText(result_label)
+
+        elif self.pushButton_div.isChecked():
+            if m.division(self.x1, x2) is None:
+                self.result.setText("Undefined")
+            else:
+                result_label = format(m.division(self.x1, x2), '.15g')
+                self.pushButton_div.setChecked(False)
+                self.result.setText(result_label)
+
+        elif self.pushButton_mod.isChecked():
+            if m.modulo(self.x1, x2) is None:
+                self.result.setText("Undefined")
+            else:
+                result_label = format(m.modulo(self.x1, x2), '.15g')
+                self.pushButton_mod.setChecked(False)
+                self.result.setText(result_label)
+
+        elif self.pushButton_root.isChecked():
+            if m.root(self.x1, x2) is None:
+                self.result.setText("Undefined")
+            else:
+                result_label = format(m.root(self.x1, x2), '.15g')
+                self.pushButton_root.setChecked(False)
+                self.result.setText(result_label)
+
+        elif self.pushButton_power.isChecked():
+            if m.exponencial(self.x1, x2) is None:
+                self.result.setText("Undefined")
+            else:
+                result_label = format(m.exponencial(self.x1, x2), '.15g')
+                self.pushButton_power.setChecked(False)
+                self.result.setText(result_label)
