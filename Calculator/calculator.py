@@ -142,7 +142,6 @@ class SetupWindow(QtWidgets.QMainWindow, Ui_Calculator):
 
         if self.pushButton_add.isChecked():
             result_label = format(m.addition(self.x1, x2), '.15g')
-            print(result_label)
             self.pushButton_add.setChecked(False)
 
         elif self.pushButton_sub.isChecked():
