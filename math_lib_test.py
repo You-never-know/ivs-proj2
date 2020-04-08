@@ -234,9 +234,9 @@ class test_advanced_operations(unittest.TestCase):
     # @test root with with negative whole numbers
     # @param self creates a method
     def test_root_correct_negative_whole(self): 
-        self.assertEqual(m.root(7, -10460353203), -27, "Expected solution: -27")
-        self.assertEqual(m.root(9, -46411484401953),-33,  "Expected solution: -33")
-        self.assertEqual(m.root(23, -94143178827), -3,  "Expected solution: -3")
+        self.assertAlmostEqual(m.root(7, -10460353203), -27)
+        self.assertAlmostEqual(m.root(9, -46411484401953),-33)
+        self.assertAlmostEqual(m.root(23, -94143178827), -3)
 
     ## Test for root 4
     # @test root with positive decimal numbers
@@ -250,9 +250,9 @@ class test_advanced_operations(unittest.TestCase):
     # @test root with negative decimal numbers
     # @param self creates a method
     def test_root_correct_negative_decimal(self): 
-        self.assertEqual(m.root(-5, -22), -0.5389090339 )
-        self.assertEqual(m.root(-12, 428.56489), 0.6034833386)
-        self.assertEqual(m.root(5.51, -2090278243656,45878), 172.17564002024687333)
+        self.assertAlmostEqual(m.root(-5, -22), -0.5389090339 )
+        self.assertAlmostEqual(m.root(-12, 428.56489), 0.6034833386)
+        self.assertAlmostEqual(m.root(5.51, -2090278243656,45878), 172.17564002024687333)
 
     ## Test for modulo 1
     # @test modulo with positive numbers
