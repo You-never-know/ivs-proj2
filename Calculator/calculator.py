@@ -1,4 +1,5 @@
 from PyQt5 import QtWidgets
+from PyQt5.QtGui import QIcon
 from ui import Ui_Calculator
 import math_lib as m
 
@@ -16,6 +17,7 @@ class SetupWindow(QtWidgets.QMainWindow, Ui_Calculator):
         self.setupUi(self)  # creates the designed UI
         self.show()  # shows the UI
         self.setFixedSize(260, 455)
+        self.setWindowIcon(QIcon('ico.png'))
 
         # btns
         self.pushButton_0.clicked.connect(self.number_btn_pressed)
