@@ -1,0 +1,1517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Calculator</class>
+ <widget class="QMainWindow" name="Calculator">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>280</width>
+    <height>555</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Calculator</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton_and">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>224</x>
+      <y>275</y>
+      <width>56</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(242, 242, 242);
+   background-color:  rgb(250, 250, 250);
+}
+QPushButton:pressed {
+    background-color:   rgb(242, 242, 242);
+}</string>
+    </property>
+    <property name="text">
+     <string>AND</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_d">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>56</x>
+      <y>170</y>
+      <width>56</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(242, 242, 242);
+   background-color:  rgb(250, 250, 250);
+}
+QPushButton:pressed {
+    background-color:   rgb(242, 242, 242);
+}</string>
+    </property>
+    <property name="text">
+     <string>D</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>56</x>
+      <y>345</y>
+      <width>56</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(245, 245, 245);
+   background-color: white;
+}
+QPushButton:pressed {
+    background-color:   rgb(245, 245, 245);
+}</string>
+    </property>
+    <property name="text">
+     <string>5</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="result">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>280</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+  qproperty-alignment: 'AlignVCenter | AlignRight';
+  border: 1px solid rgb(220, 220, 220);
+  background-color : white;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>0 </string>
+    </property>
+    <property name="buddy">
+     <cstring>result</cstring>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>345</y>
+      <width>56</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(245, 245, 245);
+   background-color: white;
+}
+QPushButton:pressed {
+    background-color:   rgb(245, 245, 245);
+}</string>
+    </property>
+    <property name="text">
+     <string>4</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_8">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>56</x>
+      <y>275</y>
+      <width>56</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(245, 245, 245);
+   background-color: white;
+}
+QPushButton:pressed {
+    background-color:   rgb(245, 245, 245);
+}</string>
+    </property>
+    <property name="text">
+     <string>8</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_1">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>415</y>
+      <width>56</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(245, 245, 245);
+   background-color: white;
+}
+QPushButton:pressed {
+    background-color:   rgb(245, 245, 245);
+}</string>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>112</x>
+      <y>415</y>
+      <width>56</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(245, 245, 245);
+   background-color: white;
+}
+QPushButton:pressed {
+    background-color:   rgb(245, 245, 245);
+}</string>
+    </property>
+    <property name="text">
+     <string>3</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_div">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>168</x>
+      <y>275</y>
+      <width>56</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(245, 245, 245);
+   background-color: rgb(245, 252, 255);
+}
+QPushButton:pressed {
+    background-color:   rgb(245, 245, 245);
+}</string>
+    </property>
+    <property name="text">
+     <string>÷</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_or">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>224</x>
+      <y>345</y>
+      <width>56</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(242, 242, 242);
+   background-color:  rgb(250, 250, 250);
+}
+QPushButton:pressed {
+    background-color:   rgb(242, 242, 242);
+}</string>
+    </property>
+    <property name="text">
+     <string>OR</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_mul">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>168</x>
+      <y>345</y>
+      <width>56</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(245, 245, 245);
+   background-color: rgb(245, 252, 255);
+}
+QPushButton:pressed {
+    background-color:   rgb(245, 245, 245);
+}</string>
+    </property>
+    <property name="text">
+     <string>×</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_0">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>56</x>
+      <y>485</y>
+      <width>56</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(245, 245, 245);
+   background-color: white;
+}
+QPushButton:pressed {
+    background-color:   rgb(245, 245, 245);
+}</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_xor">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>224</x>
+      <y>415</y>
+      <width>56</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(242, 242, 242);
+   background-color:  rgb(250, 250, 250);
+}
+QPushButton:pressed {
+    background-color:   rgb(242, 242, 242);
+}</string>
+    </property>
+    <property name="text">
+     <string>XOR</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_del">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>56</x>
+      <y>100</y>
+      <width>56</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(242, 242, 242);
+   background-color:  rgb(250, 250, 250);
+}
+QPushButton:pressed {
+    background-color:   rgb(242, 242, 242);
+}</string>
+    </property>
+    <property name="text">
+     <string>del</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_dot">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>485</y>
+      <width>56</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(242, 242, 242);
+   background-color:  rgb(250, 250, 250);
+}
+QPushButton:pressed {
+    background-color:   rgb(242, 242, 242);
+}</string>
+    </property>
+    <property name="text">
+     <string>.</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>56</x>
+      <y>415</y>
+      <width>56</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(245, 245, 245);
+   background-color: white;
+}
+QPushButton:pressed {
+    background-color:   rgb(245, 245, 245);
+}</string>
+    </property>
+    <property name="text">
+     <string>2</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_sub">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>168</x>
+      <y>415</y>
+      <width>56</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(245, 245, 245);
+   background-color: rgb(245, 252, 255);
+}
+QPushButton:pressed {
+    background-color:   rgb(245, 245, 245);
+}</string>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_a">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>170</y>
+      <width>56</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(242, 242, 242);
+   background-color:  rgb(250, 250, 250);
+}
+QPushButton:pressed {
+    background-color:   rgb(242, 242, 242);
+}</string>
+    </property>
+    <property name="text">
+     <string>A</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_7">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>275</y>
+      <width>56</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(245, 245, 245);
+   background-color: white;
+}
+QPushButton:pressed {
+    background-color:   rgb(245, 245, 245);
+}</string>
+    </property>
+    <property name="text">
+     <string>7</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_9">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>112</x>
+      <y>275</y>
+      <width>56</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(245, 245, 245);
+   background-color: white;
+}
+QPushButton:pressed {
+    background-color:   rgb(245, 245, 245);
+}</string>
+    </property>
+    <property name="text">
+     <string>9</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_not">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>224</x>
+      <y>485</y>
+      <width>56</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(242, 242, 242);
+   background-color:  rgb(250, 250, 250);
+}
+QPushButton:pressed {
+    background-color:   rgb(242, 242, 242);
+}</string>
+    </property>
+    <property name="text">
+     <string>NOT</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_eq">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>112</x>
+      <y>485</y>
+      <width>56</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(242, 242, 242);
+   background-color:  rgb(250, 250, 250);
+}
+QPushButton:pressed {
+    background-color:   rgb(242, 242, 242);
+}</string>
+    </property>
+    <property name="text">
+     <string>=</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_6">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>112</x>
+      <y>345</y>
+      <width>56</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(245, 245, 245);
+   background-color: white;
+}
+QPushButton:pressed {
+    background-color:   rgb(245, 245, 245);
+}</string>
+    </property>
+    <property name="text">
+     <string>6</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_add">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>168</x>
+      <y>485</y>
+      <width>56</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(245, 245, 245);
+   background-color: rgb(245, 252, 255);
+}
+QPushButton:pressed {
+    background-color:   rgb(245, 245, 245);
+}</string>
+    </property>
+    <property name="text">
+     <string>+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_clear">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>100</y>
+      <width>56</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(242, 242, 242);
+   background-color:  rgb(250, 250, 250);
+}
+QPushButton:pressed {
+    background-color:   rgb(242, 242, 242);
+}</string>
+    </property>
+    <property name="text">
+     <string>C</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_menu_1">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>8</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(242, 242, 242);
+   background-color:  rgb(242, 242, 242);
+}
+QPushButton:pressed {
+    background-color:   rgb(250, 250, 250);
+}</string>
+    </property>
+    <property name="text">
+     <string>Standard</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_menu_2">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>0</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>8</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(242, 242, 242);
+   background-color:  rgb(242, 242, 242);
+}
+QPushButton:pressed {
+    background-color:   rgb(250, 250, 250);
+}</string>
+    </property>
+    <property name="text">
+     <string>Scientific</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_menu_3">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>0</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>8</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(242, 242, 242);
+   background-color:  rgb(250, 250, 250);
+}
+QPushButton:pressed {
+    background-color:   rgb(242, 242, 242);
+}</string>
+    </property>
+    <property name="text">
+     <string>Programming</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_menu_4">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>0</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>8</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(242, 242, 242);
+   background-color:  rgb(242, 242, 242);
+}
+QPushButton:pressed {
+    background-color:   rgb(250, 250, 250);
+}</string>
+    </property>
+    <property name="text">
+     <string>Graphing</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_b">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>205</y>
+      <width>56</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(242, 242, 242);
+   background-color:  rgb(250, 250, 250);
+}
+QPushButton:pressed {
+    background-color:   rgb(242, 242, 242);
+}</string>
+    </property>
+    <property name="text">
+     <string>B</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_e">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>56</x>
+      <y>205</y>
+      <width>56</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(242, 242, 242);
+   background-color:  rgb(250, 250, 250);
+}
+QPushButton:pressed {
+    background-color:   rgb(242, 242, 242);
+}</string>
+    </property>
+    <property name="text">
+     <string>E</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_c">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>240</y>
+      <width>56</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(242, 242, 242);
+   background-color:  rgb(250, 250, 250);
+}
+QPushButton:pressed {
+    background-color:   rgb(242, 242, 242);
+}</string>
+    </property>
+    <property name="text">
+     <string>C</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_f">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>56</x>
+      <y>240</y>
+      <width>56</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(242, 242, 242);
+   background-color:  rgb(250, 250, 250);
+}
+QPushButton:pressed {
+    background-color:   rgb(242, 242, 242);
+}</string>
+    </property>
+    <property name="text">
+     <string>F</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="result_dec">
+    <property name="geometry">
+     <rect>
+      <x>112</x>
+      <y>100</y>
+      <width>280</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+  qproperty-alignment: 'AlignVCenter | AlignLeft';
+  border: 0px solid rgb(220, 220, 220);
+  background-color : white;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string> DEC:</string>
+    </property>
+    <property name="buddy">
+     <cstring>result</cstring>
+    </property>
+   </widget>
+   <widget class="QLabel" name="result_bin">
+    <property name="geometry">
+     <rect>
+      <x>112</x>
+      <y>135</y>
+      <width>280</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+  qproperty-alignment: 'AlignVCenter | AlignLeft';
+  border: 0px solid rgb(220, 220, 220);
+  background-color : white;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string> BIN:</string>
+    </property>
+    <property name="buddy">
+     <cstring>result</cstring>
+    </property>
+   </widget>
+   <widget class="QLabel" name="result_oct">
+    <property name="geometry">
+     <rect>
+      <x>112</x>
+      <y>170</y>
+      <width>280</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+  qproperty-alignment: 'AlignVCenter | AlignLeft';
+  border: 0px solid rgb(220, 220, 220);
+  background-color : white;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string> OCT:</string>
+    </property>
+    <property name="buddy">
+     <cstring>result</cstring>
+    </property>
+   </widget>
+   <widget class="QLabel" name="result_hex">
+    <property name="geometry">
+     <rect>
+      <x>112</x>
+      <y>205</y>
+      <width>280</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+  qproperty-alignment: 'AlignVCenter | AlignLeft';
+  border: 0px solid rgb(220, 220, 220);
+  background-color : white;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string> HEX:</string>
+    </property>
+    <property name="buddy">
+     <cstring>result</cstring>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_dec">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>168</x>
+      <y>240</y>
+      <width>28</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(242, 242, 242);
+   background-color:  rgb(242, 242, 242);
+}
+QPushButton:pressed {
+    background-color:   rgb(250, 250, 250);
+}</string>
+    </property>
+    <property name="text">
+     <string>DEC</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_bin">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>196</x>
+      <y>240</y>
+      <width>28</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(242, 242, 242);
+   background-color:  rgb(250, 250, 250);
+}
+QPushButton:pressed {
+    background-color:   rgb(242, 242, 242);
+}</string>
+    </property>
+    <property name="text">
+     <string>BIN</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_oct">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>224</x>
+      <y>240</y>
+      <width>28</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(242, 242, 242);
+   background-color:  rgb(250, 250, 250);
+}
+QPushButton:pressed {
+    background-color:   rgb(242, 242, 242);
+}</string>
+    </property>
+    <property name="text">
+     <string>OCT</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_hex">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>252</x>
+      <y>240</y>
+      <width>28</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(242, 242, 242);
+   background-color:  rgb(250, 250, 250);
+}
+QPushButton:pressed {
+    background-color:   rgb(242, 242, 242);
+}</string>
+    </property>
+    <property name="text">
+     <string>HEX</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="src">
+    <property name="geometry">
+     <rect>
+      <x>112</x>
+      <y>240</y>
+      <width>56</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+  qproperty-alignment: 'AlignVCenter | AlignLeft';
+  border: 1px solid  rgb(242, 242, 242);
+  background-color : white;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string> SRC:</string>
+    </property>
+    <property name="buddy">
+     <cstring>result</cstring>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_rightb">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>56</x>
+      <y>135</y>
+      <width>56</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(242, 242, 242);
+   background-color:  rgb(250, 250, 250);
+}
+QPushButton:pressed {
+    background-color:   rgb(242, 242, 242);
+}</string>
+    </property>
+    <property name="text">
+     <string>)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_leftb">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>135</y>
+      <width>56</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(242, 242, 242);
+   background-color:  rgb(250, 250, 250);
+}
+QPushButton:pressed {
+    background-color:   rgb(242, 242, 242);
+}</string>
+    </property>
+    <property name="text">
+     <string>(</string>
+    </property>
+   </widget>
+   <zorder>src</zorder>
+   <zorder>pushButton_and</zorder>
+   <zorder>pushButton_d</zorder>
+   <zorder>pushButton_5</zorder>
+   <zorder>pushButton_4</zorder>
+   <zorder>pushButton_8</zorder>
+   <zorder>pushButton_1</zorder>
+   <zorder>pushButton_3</zorder>
+   <zorder>pushButton_div</zorder>
+   <zorder>pushButton_or</zorder>
+   <zorder>pushButton_mul</zorder>
+   <zorder>pushButton_0</zorder>
+   <zorder>pushButton_xor</zorder>
+   <zorder>pushButton_del</zorder>
+   <zorder>pushButton_dot</zorder>
+   <zorder>pushButton_2</zorder>
+   <zorder>pushButton_sub</zorder>
+   <zorder>pushButton_a</zorder>
+   <zorder>pushButton_7</zorder>
+   <zorder>pushButton_9</zorder>
+   <zorder>pushButton_not</zorder>
+   <zorder>pushButton_eq</zorder>
+   <zorder>pushButton_6</zorder>
+   <zorder>pushButton_add</zorder>
+   <zorder>pushButton_clear</zorder>
+   <zorder>pushButton_menu_1</zorder>
+   <zorder>pushButton_menu_2</zorder>
+   <zorder>pushButton_menu_3</zorder>
+   <zorder>pushButton_menu_4</zorder>
+   <zorder>pushButton_b</zorder>
+   <zorder>pushButton_e</zorder>
+   <zorder>pushButton_c</zorder>
+   <zorder>pushButton_f</zorder>
+   <zorder>result_dec</zorder>
+   <zorder>result_bin</zorder>
+   <zorder>result_oct</zorder>
+   <zorder>result_hex</zorder>
+   <zorder>pushButton_dec</zorder>
+   <zorder>pushButton_bin</zorder>
+   <zorder>pushButton_oct</zorder>
+   <zorder>pushButton_hex</zorder>
+   <zorder>pushButton_rightb</zorder>
+   <zorder>pushButton_leftb</zorder>
+   <zorder>result</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
