@@ -11,7 +11,10 @@ class SetupWindow(QtWidgets.QMainWindow, Ui_Calculator):
     x1 = None
     x2 = None
     x2_type = False
+
     ## Inicialization of GUI and connecting clicked buttons
+    # Sets the window size to 260 × 455
+    # Assigns ico.png as GUI window icon
     def __init__(self):
         super().__init__()  # calling the init methods of the base classes QMainWindow and Ui_Calculator
         self.setupUi(self)  # creates the designed UI
@@ -63,12 +66,12 @@ class SetupWindow(QtWidgets.QMainWindow, Ui_Calculator):
         btn = self.sender()
 
         if ((self.pushButton_add.isChecked() or
-                self.pushButton_sub.isChecked() or
-                self.pushButton_mul.isChecked() or
-                self.pushButton_div.isChecked() or
-                self.pushButton_mod.isChecked() or
-                self.pushButton_root.isChecked() or
-                self.pushButton_power.isChecked()) and (not self.x2_type)):
+             self.pushButton_sub.isChecked() or
+             self.pushButton_mul.isChecked() or
+             self.pushButton_div.isChecked() or
+             self.pushButton_mod.isChecked() or
+             self.pushButton_root.isChecked() or
+             self.pushButton_power.isChecked()) and (not self.x2_type)):
             # float solves starting 0, format solves formatting and string displaying
             result_label = format(float(btn.text()), '.15g')
             self.x2_type = True

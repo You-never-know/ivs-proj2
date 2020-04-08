@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>240</width>
-    <height>420</height>
+    <width>260</width>
+    <height>520</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,15 +21,17 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>120</y>
-      <width>60</width>
-      <height>60</height>
+      <y>195</y>
+      <width>65</width>
+      <height>65</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Montserrat Medium</family>
-      <pointsize>11</pointsize>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -51,16 +53,18 @@ QPushButton:pressed {
     </property>
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>60</y>
-      <width>60</width>
-      <height>60</height>
+      <x>65</x>
+      <y>130</y>
+      <width>65</width>
+      <height>65</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Montserrat Medium</family>
-      <pointsize>11</pointsize>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -82,16 +86,18 @@ QPushButton:pressed {
     </property>
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>240</y>
-      <width>60</width>
-      <height>60</height>
+      <x>65</x>
+      <y>325</y>
+      <width>65</width>
+      <height>65</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Montserrat Medium</family>
-      <pointsize>11</pointsize>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -111,15 +117,17 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>0</y>
-      <width>240</width>
-      <height>60</height>
+      <y>33</y>
+      <width>260</width>
+      <height>65</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Montserrat Medium</family>
-      <pointsize>11</pointsize>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -145,15 +153,17 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>240</y>
-      <width>60</width>
-      <height>60</height>
+      <y>325</y>
+      <width>65</width>
+      <height>65</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Montserrat Medium</family>
-      <pointsize>11</pointsize>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -175,16 +185,18 @@ QPushButton:pressed {
     </property>
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>180</y>
-      <width>60</width>
-      <height>60</height>
+      <x>65</x>
+      <y>260</y>
+      <width>65</width>
+      <height>65</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Montserrat Medium</family>
-      <pointsize>11</pointsize>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -207,15 +219,17 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>300</y>
-      <width>60</width>
-      <height>60</height>
+      <y>390</y>
+      <width>65</width>
+      <height>65</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Montserrat Medium</family>
-      <pointsize>11</pointsize>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -237,16 +251,18 @@ QPushButton:pressed {
     </property>
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>300</y>
-      <width>60</width>
-      <height>60</height>
+      <x>130</x>
+      <y>390</y>
+      <width>65</width>
+      <height>65</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Montserrat Medium</family>
-      <pointsize>11</pointsize>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -262,22 +278,24 @@ QPushButton:pressed {
      <string>3</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_divide">
+   <widget class="QPushButton" name="pushButton_div">
     <property name="enabled">
      <bool>true</bool>
     </property>
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>180</y>
-      <width>60</width>
-      <height>60</height>
+      <x>195</x>
+      <y>260</y>
+      <width>65</width>
+      <height>65</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Montserrat Medium</family>
-      <pointsize>11</pointsize>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -299,16 +317,18 @@ QPushButton:pressed {
     </property>
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>120</y>
-      <width>60</width>
-      <height>60</height>
+      <x>65</x>
+      <y>195</y>
+      <width>65</width>
+      <height>65</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Montserrat Medium</family>
-      <pointsize>11</pointsize>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -330,16 +350,18 @@ QPushButton:pressed {
     </property>
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>240</y>
-      <width>60</width>
-      <height>60</height>
+      <x>195</x>
+      <y>325</y>
+      <width>65</width>
+      <height>65</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Montserrat Medium</family>
-      <pointsize>11</pointsize>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -352,7 +374,7 @@ QPushButton:pressed {
 }</string>
     </property>
     <property name="text">
-     <string>*</string>
+     <string>×</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_0">
@@ -361,16 +383,18 @@ QPushButton:pressed {
     </property>
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>360</y>
-      <width>60</width>
-      <height>60</height>
+      <x>65</x>
+      <y>455</y>
+      <width>65</width>
+      <height>65</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Montserrat Medium</family>
-      <pointsize>11</pointsize>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -392,16 +416,18 @@ QPushButton:pressed {
     </property>
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>120</y>
-      <width>60</width>
-      <height>60</height>
+      <x>130</x>
+      <y>195</y>
+      <width>65</width>
+      <height>65</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Montserrat Medium</family>
-      <pointsize>11</pointsize>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -423,16 +449,18 @@ QPushButton:pressed {
     </property>
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>60</y>
-      <width>60</width>
-      <height>60</height>
+      <x>195</x>
+      <y>130</y>
+      <width>65</width>
+      <height>65</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Montserrat Medium</family>
-      <pointsize>11</pointsize>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -455,15 +483,17 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>360</y>
-      <width>60</width>
-      <height>60</height>
+      <y>455</y>
+      <width>65</width>
+      <height>65</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Montserrat Medium</family>
-      <pointsize>11</pointsize>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -485,16 +515,18 @@ QPushButton:pressed {
     </property>
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>300</y>
-      <width>60</width>
-      <height>60</height>
+      <x>65</x>
+      <y>390</y>
+      <width>65</width>
+      <height>65</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Montserrat Medium</family>
-      <pointsize>11</pointsize>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -516,16 +548,18 @@ QPushButton:pressed {
     </property>
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>300</y>
-      <width>60</width>
-      <height>60</height>
+      <x>195</x>
+      <y>390</y>
+      <width>65</width>
+      <height>65</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Montserrat Medium</family>
-      <pointsize>11</pointsize>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -548,15 +582,17 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>60</y>
-      <width>60</width>
-      <height>60</height>
+      <y>130</y>
+      <width>65</width>
+      <height>65</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Montserrat Medium</family>
-      <pointsize>11</pointsize>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -579,15 +615,17 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>180</y>
-      <width>60</width>
-      <height>60</height>
+      <y>260</y>
+      <width>65</width>
+      <height>65</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Montserrat Medium</family>
-      <pointsize>11</pointsize>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -609,16 +647,18 @@ QPushButton:pressed {
     </property>
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>180</y>
-      <width>60</width>
-      <height>60</height>
+      <x>130</x>
+      <y>260</y>
+      <width>65</width>
+      <height>65</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Montserrat Medium</family>
-      <pointsize>11</pointsize>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -640,16 +680,18 @@ QPushButton:pressed {
     </property>
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>120</y>
-      <width>60</width>
-      <height>60</height>
+      <x>195</x>
+      <y>195</y>
+      <width>65</width>
+      <height>65</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Montserrat Medium</family>
-      <pointsize>11</pointsize>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -671,16 +713,18 @@ QPushButton:pressed {
     </property>
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>360</y>
-      <width>60</width>
-      <height>60</height>
+      <x>130</x>
+      <y>455</y>
+      <width>65</width>
+      <height>65</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Montserrat Medium</family>
-      <pointsize>11</pointsize>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -702,16 +746,18 @@ QPushButton:pressed {
     </property>
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>240</y>
-      <width>60</width>
-      <height>60</height>
+      <x>130</x>
+      <y>325</y>
+      <width>65</width>
+      <height>65</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Montserrat Medium</family>
-      <pointsize>11</pointsize>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -733,16 +779,18 @@ QPushButton:pressed {
     </property>
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>360</y>
-      <width>60</width>
-      <height>60</height>
+      <x>195</x>
+      <y>455</y>
+      <width>65</width>
+      <height>65</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Montserrat Medium</family>
-      <pointsize>11</pointsize>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -764,16 +812,18 @@ QPushButton:pressed {
     </property>
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>60</y>
-      <width>60</width>
-      <height>60</height>
+      <x>130</x>
+      <y>130</y>
+      <width>65</width>
+      <height>65</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Montserrat Medium</family>
-      <pointsize>11</pointsize>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -787,6 +837,270 @@ QPushButton:pressed {
     </property>
     <property name="text">
      <string>C</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_menu_1">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>65</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>8</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(242, 242, 242);
+   background-color:  rgb(250, 250, 250);
+}
+QPushButton:pressed {
+    background-color:   rgb(242, 242, 242);
+}</string>
+    </property>
+    <property name="text">
+     <string>Standard</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_m1_2">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>98</y>
+      <width>65</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(242, 242, 242);
+   background-color:  rgb(250, 250, 250);
+}
+QPushButton:pressed {
+    background-color:   rgb(242, 242, 242);
+}</string>
+    </property>
+    <property name="text">
+     <string>m-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_menu_3">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>0</y>
+      <width>65</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>8</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(242, 242, 242);
+   background-color:  rgb(242, 242, 242);
+}
+QPushButton:pressed {
+    background-color:   rgb(250, 250, 250);
+}</string>
+    </property>
+    <property name="text">
+     <string>Programming</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_m1">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>98</y>
+      <width>65</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(242, 242, 242);
+   background-color:  rgb(250, 250, 250);
+}
+QPushButton:pressed {
+    background-color:   rgb(242, 242, 242);
+}</string>
+    </property>
+    <property name="text">
+     <string>mc</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_m2_2">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>195</x>
+      <y>98</y>
+      <width>65</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(242, 242, 242);
+   background-color:  rgb(250, 250, 250);
+}
+QPushButton:pressed {
+    background-color:   rgb(242, 242, 242);
+}</string>
+    </property>
+    <property name="text">
+     <string>mr</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_m2">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>65</x>
+      <y>98</y>
+      <width>65</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(242, 242, 242);
+   background-color:  rgb(250, 250, 250);
+}
+QPushButton:pressed {
+    background-color:   rgb(242, 242, 242);
+}</string>
+    </property>
+    <property name="text">
+     <string>m+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_menu_4">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>195</x>
+      <y>0</y>
+      <width>65</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>8</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(242, 242, 242);
+   background-color:  rgb(242, 242, 242);
+}
+QPushButton:pressed {
+    background-color:   rgb(250, 250, 250);
+}</string>
+    </property>
+    <property name="text">
+     <string>Graphing</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_menu_2">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>65</x>
+      <y>0</y>
+      <width>65</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>8</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   border: 1px solid  rgb(242, 242, 242);
+   background-color:  rgb(242, 242, 242);
+}
+QPushButton:pressed {
+    background-color:   rgb(250, 250, 250);
+}</string>
+    </property>
+    <property name="text">
+     <string>Scientific</string>
     </property>
    </widget>
   </widget>
