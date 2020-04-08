@@ -250,9 +250,9 @@ class test_advanced_operations(unittest.TestCase):
     # @test root with negative decimal numbers
     # @param self creates a method
     def test_root_correct_negative_decimal(self): 
-        self.assertEqual(m.root(-22,-5), -0.5389090339 )
-        self.assertEqual(m.root(428.56489,-12), 0.6034833386)
-        self.assertEqual(m.root(-2090278243656.45878, 5.51), 172.17564)
+        self.assertEqual(m.root(-5, -22), -0.5389090339 )
+        self.assertEqual(m.root(-12, 428.56489), 0.6034833386)
+        self.assertEqual(m.root(5.51, -2090278243656,45878), 172.17564002024687333)
 
     ## Test for modulo 1
     # @test modulo with positive numbers
