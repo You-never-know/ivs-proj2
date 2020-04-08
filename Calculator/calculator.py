@@ -15,6 +15,7 @@ class SetupWindow(QtWidgets.QMainWindow, Ui_Calculator):
         super().__init__()  # calling the init methods of the base classes QMainWindow and Ui_Calculator
         self.setupUi(self)  # creates the designed UI
         self.show()  # shows the UI
+        self.setFixedSize(260, 455)
 
         # btns
         self.pushButton_0.clicked.connect(self.number_btn_pressed)
