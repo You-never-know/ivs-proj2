@@ -87,10 +87,11 @@ def root(x, base):
     if (base == 0):
         return None
     if (base < 0):
-        if (x < 0):
-            return None
         if (x % 2 == 0):
             return None
+        else:
+            base = -base
+            return -(base) ** (1 / x)
     return (base) ** (1 / x)
 
 
