@@ -1,3 +1,10 @@
+#!/usr/bin/env python
+# coding: utf-8
+# Autor: Daniel Marek <xmarek72>
+
+# Lincense: GNU GPL v.3 
+# Whole licence can be found at https://www.gnu.org/licenses/gpl-3.0.html
+
 import math_lib as m
 
 amount=0 # N
@@ -5,7 +12,6 @@ sum_normal=0 # x
 sum_square=0 # xi
 
 def load_data():
-    global amount, sum_normal, sum_square
 
     while True:
         try:
@@ -14,9 +20,8 @@ def load_data():
             # if all numbers are on a new line
             try:
                num2=float(numbers)
-               amount=m.addition(amount,1)
-               sum_normal=m.addition(sum_normal,num2)
-               sum_square=m.addition(sum_square,(m.multiplication(num2,num2)))
+               calculate_line(num2)
+
             except ValueError:
                process_line(numbers)
             
@@ -24,7 +29,6 @@ def load_data():
             break
 
 def process_line(line):
-        global amount, sum_normal, sum_square
 
         list1 = line.strip().split(" ")
         list2 = line.strip().split(",")
@@ -33,9 +37,8 @@ def process_line(line):
         for i in list1:
             try:
                num = float(i) 
-               amount=m.addition(amount,1)
-               sum_normal=m.addition(sum_normal,num)
-               sum_square=m.addition(sum_square,(m.multiplication(num,num)))
+               calculate_line(num)
+
             except ValueError: 
                 break
 
@@ -43,12 +46,18 @@ def process_line(line):
         for j in list2:
             try:
                 num1 = float(j)
-                amount=m.addition(amount,1)
-                sum_normal=m.addition(sum_normal,num1)
-                sum_square=m.addition(sum_square,(m.multiplication(num1,num1)))
+                calculate_line(num1)
+
             except ValueError:
                 break
 
+
+def calculate_line(num):
+     global amount, sum_normal, sum_square
+
+     amount=m.addition(amount,1)
+     sum_normal=m.addition(sum_normal,num)
+     sum_square=m.addition(sum_square,(m.multiplication(num,num)))
 
 
 def calculate_result():
