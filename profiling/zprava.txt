@@ -1,0 +1,12 @@
+While doing a profiling we came to multiple conclusions. 
+The places where our program took the most time varied drastically with different amount of input data. 
+
+Program with 10 and 100 inputs spend most of the time doing system and internal functions.
+In order to make it better we can optimize the code to contain the least amount of external functions and modules.
+
+Profiling with 1000 inputs showed us, that our program spends most of the time in two sections. 
+In a function, that reads data from input and in function, that does calculations with the read numbers.
+
+Specifically the most time was spend in a build-in function input() and in functions addition() and multiplication() from our math_lib library.
+This is caused because these functions are called many times.
+If we want to optimize our program, we should focus on finding more efficient ways to read number and calculate with them. 
